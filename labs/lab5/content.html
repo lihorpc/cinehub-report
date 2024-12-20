@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinehub</title>
+    <script src="./scripts/task1.js"></script>
+    <script src="./scripts/task2.js"></script>
+    <script src="./scripts/task3.js"></script>
+    <script src="./scripts/task4.js"></script>
+    <script src="./scripts/task5.js"></script>
+    <link rel="stylesheet" href="../../menu.css">
+    <link rel="stylesheet" href="task5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="laba-container">
+        <div class="menu">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#lab-info">Лабораторна робота №5</a></li>
+                    <li><a href="#task1">Завдання 1</a></li>
+                    <li><a href="#task2">Завдання 2</a></li>
+                    <li><a href="#task3">Завдання 3</a></li>
+                    <li><a href="#task4">Завдання 4</a></li>
+                    <li><a href="#task5">Завдання 5</a></li>
+                    <li><a href="#conclusions">Висновки</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div id="lab-info">
+                <h1>Інформація про лабораторну роботу</h1>
+                <h2>Тема:</h2>
+                <p>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.
+                    ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT</p>
+                
+                <h2>Мета:</h2>
+                <p>придбати практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях. Реалізація програм засовами мови JAVASCRIPT</pt>
+
+                <h2>Розташування:</h2>
+                <ul>
+                    <li>WEB-застосунок: <code>https://cinehub.static.domains</code></li>
+                    <li>Звітний документ: <code>https://cinehub-report.static.domains</code></li>
+                </ul>
+            </div>
+
+            <div id="task1">
+                <h1>Завдання 1</h1>
+                <h2>Станція з продажу ремонтних дроїдів</h2>
+                
+                <p>Функція <code>makeTransaction</code> приймає два параметри:</p>
+                <ul>
+                    <li><code>quantity</code> — кількість замовлених дроїдів</li>
+                    <li><code>pricePerDroid</code> — варість одного дроїда</li>
+                </ul>
+
+                <div class="code-example">
+                    <h3>Код:</h3>
+                    <img src="./images/task1_code.png" alt="Task 1 Code">
+                    <h3>Скріншот результату в консолі:</h3>
+                    <img src="./images/task1_result.png" alt="Task 1 Console">
+                </div>
+            </div>
+
+            <div id="task2">
+                <h1>Завдання 2</h1>
+                <h2>Перевірка на спам</h2>
+                
+                <p>Функція <code>checkForSpam</code> приймає один параметр:</p>
+                <ul>
+                    <li><code>message</code> — рядок для перевірки на заборонені слова</li>
+                </ul>
+
+                <div class="code-example">
+                    <h3>Код:</h3>
+                    <img src="./images/task2_code.png" alt="Task 2 Code">
+                    <h3>Скріншот результату в консолі:</h3>
+                    <img src="./images/task2_result.png" alt="Task 2 Console">
+                </div>
+            </div>
+
+            <div id="task3">
+                <h1>Завдання 3</h1>
+                <h2>Фільтрація масиву чисел</h2>
+                
+                <p>Функція <code>filterArray</code> приймає два параметри:</p>
+                <ul>
+                    <li><code>numbers</code> — масив чисел</li>
+                    <li><code>value</code> — значення для фільтрації</li>
+                </ul>
+
+                <div class="code-example">
+                    <h3>Код:</h3>
+                    <img src="./images/task3_code.png" alt="Task 3 Code">
+                    <h3>Скріншот результату в консолі:</h3>
+                    <img src="./images/task3_result.png" alt="Task 3 Console">
+                </div>
+            </div>
+
+            <div id="task4">
+                <h1>Завдання 4</h1>
+                <h2>Операції з масивами</h2>
+                
+                <p>Завдання складається з двох частин:</p>
+                <ol>
+                    <li>Побудова масиву B на основі масиву A, де кожен елемент обчислюється за формулою: bi = max*ai</li>
+                    <li>Сортування вихідного масиву за зменшенням методом вставки</li>
+                </ol>
+
+                <div class="code-example">
+                    <h3>Код:</h3>
+                    <img src="./images/task4_code.png" alt="Task 4 Code">
+                    <h3>Скріншот результату в консолі:</h3>
+                    <img src="./images/task4_result.png" alt="Task 4 Console">
+                </div>
+            </div>
+
+            <div id="task5">
+                <h1>Завдання 5</h1>
+                <h2>Калькулятор</h2>
+                
+                <div class="calculator">
+                    <input type="text" id="display" readonly>
+                    <div class="calculator-buttons">
+                        <button onclick="clearDisplay()">C</button>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button onclick="appendToDisplay('+')">+</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button onclick="appendToDisplay('-')">-</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button onclick="appendToDisplay('*')">*</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="appendToDisplay('.')">.</button>
+                        <button onclick="calculate()">=</button>
+                        <button onclick="appendToDisplay('/')">/</button>
+                        <button onclick="appendToDisplay('%')">%</button>
+                        <button onclick="squareRoot()">√</button>
+                        <button onclick="appendToDisplay('^')">x^y</button>
+                    </div>
+                </div>
+
+                <div class="code-example">
+                    <h3>Код:</h3>
+                    <img src="./images/task5_code.png" alt="Task 5 Code">
+                </div>
+            </div>
+
+            <div id="conclusions">
+                <h1>Висновки</h1>
+                <p>В ході виконання лабораторної роботи №5 було досягнуто наступних результатів:</p>
+                <ul>
+                    <li>Освоєно основні принципи роботи з JavaScript у HTML-документах</li>
+                    <li>Набуто практичних навичок роботи з масивами та їх методами в JavaScript</li>
+                    <li>Створено різноманітні функції для обробки даних та розв'язання практичних задач</li>
+                    <li>Реалізовано інтерактивний калькулятор з розширеним функціоналом</li>
+                </ul>
+
+                <p>Отримані знання та навички є фундаментальними для розробки інтерактивних веб-застосунків та реалізації клієнтської логіки на JavaScript.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

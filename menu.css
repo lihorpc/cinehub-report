@@ -1,0 +1,190 @@
+.laba-container {
+    display: flex;
+}
+
+.content-container {
+    padding: 40px 60px;
+    margin-left: 300px;
+    max-width: 1200px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Typography styles for content */
+.content-container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #111827;
+    letter-spacing: -0.02em;
+}
+
+.content-container h2 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.content-container h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #374151;
+}
+
+.content-container p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    color: #4b5563;
+}
+
+/* Code blocks and pre formatting */
+.content-container pre {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+}
+
+.content-container code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.95rem;
+}
+
+/* Lists styling */
+.content-container ul, 
+.content-container ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.content-container li {
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+/* Links styling */
+.content-container a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.content-container a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Images styling */
+.content-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+/* Tables styling */
+.content-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.content-container th,
+.content-container td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.content-container th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #111827;
+}
+
+/* Blockquote styling */
+.content-container blockquote {
+    border-left: 4px solid #2563eb;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #4b5563;
+    font-style: italic;
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.main-menu {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.main-menu > ul {
+    padding-left: 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #333333;
+    padding: 12px 20px;
+    display: block;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+}
+
+.main-menu a:hover {
+    background-color: #f8f9fa;
+    color: #2563eb;
+    border-left: 3px solid #2563eb;
+}
+
+.screenshot-with-code {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.screenshot-with-code .screenshot {
+    max-width: 70%;
+}
+
+.screenshot-with-code .code {
+    max-width: 30%;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.code-example img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Table Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .fixed-table {
+            width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 20px;
+        }
+        
+        /* Header - yellow */
+        .header {
+            background-color: #FFD700;
+            height: 80px;
+        }
+        
+        /* Left sidebar - blue */
+        .sidebar-left {
+            background-color: #4169E1;
+            width: 200px;
+            height: 400px;
+        }
+        
+        /* Content area - white */
+        .content {
+            background-color: #FFFFFF;
+            padding: 20px;
+        }
+        
+        /* Right sidebar - blue */
+        .sidebar-right {
+            background-color: #4169E1;
+            width: 200px;
+        }
+        
+        /* Red sections */
+        .section-red {
+            background-color: #FF6B6B;
+            height: 60px;
+        }
+        
+        /* Footer - yellow */
+        .footer {
+            background-color: #FFD700;
+            height: 80px;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        .empty {
+            height: 280px;
+            border: solid 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table class="fixed-table">
+        <tr>
+            <td class="header" colspan="3">1</td>
+        </tr>
+        <tr>
+            <td class="sidebar-left">2</td>
+            <td class="content" colspan="2">
+                <div class="section-red" /></div>
+                <table class="full-width">
+                    <tr>
+                        <td>
+                            <div class="empty">3</div>
+                            <div class="section-red">3</div>
+                        </td>
+                        <td class="sidebar-left">4</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer" colspan="3">5</td>
+        </tr>
+    </table>
+</body>
+</html>

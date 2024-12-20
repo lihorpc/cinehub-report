@@ -1,0 +1,211 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.site-header {
+    background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+    color: white;
+    padding: 1rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(108, 183, 255, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+
+/* Student profile styles - modern card */
+.student-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.student-details {
+    text-align: left;
+}
+
+.student-info {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.student-fullname, .student-group {
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.student-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(108, 183, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.student-photo img:hover {
+    transform: scale(1.05);
+    border-color: rgba(108, 183, 255, 0.6);
+    box-shadow: 0 6px 12px rgba(44, 83, 100, 0.2);
+}
+
+/* Main container styles - adjusting spacing */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+/* Navigation styles - more compact and elegant */
+.lab-navigation {
+    background: rgb(247 248 249);
+    border-radius: 12px;
+    padding: 0.8rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(44, 83, 100, 0.08);
+    position: sticky;
+    top: 0px;
+    height: fit-content;
+}
+
+.lab-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 0.3rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.lab-list::-webkit-scrollbar {
+    display: none;
+}
+
+.lab-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #2C5364;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    background-color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid rgba(44, 83, 100, 0.08);
+    min-width: 140px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(44, 83, 100, 0.03);
+}
+
+.lab-link:hover {
+    background: linear-gradient(135deg, #2C5364 0%, #203A43 100%);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(44, 83, 100, 0.15);
+    border-color: transparent;
+}
+
+/* Content styles - making content area bigger */
+.content {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#content-frame {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+.site-footer {
+    background: linear-gradient(135deg, #0F2027 0%, #203A43 100%);
+    color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lab-list {
+        justify-content: flex-start;
+        padding-bottom: 0.4rem;
+    }
+    
+    .lab-navigation {
+        padding: 0.6rem;
+    }
+    
+    .lab-link {
+        min-width: 130px;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.site-header, .main-container {
+    animation: fadeIn 1s ease-in;
+} 

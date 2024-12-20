@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinehub</title>
+    <link rel="stylesheet" href="../../menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="laba-container">
+        <div class="menu">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#description">Опис предметного середовища</a>
+                        <ul class="submenu">
+                            <li><a href="#description">Загальний опис</a></li>
+                            <li><a href="#features">Функціонал</a></li>
+                            <li><a href="#technology">Технології</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#lab-info">Лабораторна робота №1</a>
+                        <ul class="submenu">
+                            <li><a href="#lab-info">Інформація</a></li>
+                            <li><a href="#table-section">Таблиці</a></li>
+                            <li><a href="#image-section">Зображення</a></li>
+                            <li><a href="#lists-section">Списки</a></li>
+                            <li><a href="#forms-section">Форми</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#questions">Контрольні питання</a></li>
+                    <li><a href="#conclusions">Висновки</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div id="description">
+                <h1>Опис предметного середовища</h1>
+                <p>
+                    Рекомендаційна система Cinehub - це інтелектуальна платформа, яка допомагає користувачам знаходити фільми та серіали на основі їхніх уподобань. Система аналізує:
+                </p>
+                <ul>
+                    <li>Історію переглядів користувача</li>
+                    <li>Оцінки та відгуки</li>
+                    <li>Жанрові вподобання</li>
+                    <li>Поведінку схожих користувачів</li>
+                </ul>
+                <p>
+                    На основі цих даних алгоритм формує персоналізовані рекомендації, враховуючи популярність контенту, новинки та рейтинги. Система постійно навчається та покращує точність рекомендацій з кожною взаємодією користувача.
+                </p>
+            </div>
+
+            <div id="lab-info">
+                <h1>Інформація про лабораторну роботу</h1>
+                <h2>Тема:</h2>
+                <p>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
+                    РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</p>
+                
+                <h2>Мета:</h2>
+                <p>Придбати практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
+                    Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.</p>
+                
+                <h2>Розташування:</h2>
+                <ul>
+                    <li>WEB-застосунок: <code>https://cinehub.static.domains</code></li>
+                    <li>Звітний документ: <code>https://cinehub-report.static.domains</code></li>
+                </ul>
+            </div>
+
+            <div id="table-section">
+                <h1>Таблиці в HTML</h1>
+                <h2>Приклад таблиці в застосунку Cinehub</h2>
+                <div class="screenshot-with-code">
+                    <img src="./images/table_screen.png" class="screenshot" alt="Table">
+                    <img src="./images/table_code.png" class="code" alt="Table code">
+                </div>
+
+                <h3>Теорія про теги таблиць:</h3>
+                <ul>
+                    <li><code>&lt;table&gt;</code> - контейнер для таблиці</li>
+                    <li><code>&lt;tr&gt;</code> - рядок таблиці</li>
+                    <li><code>&lt;th&gt;</code> - заголовок стовпця</li>
+                    <li><code>&lt;td&gt;</code> - комірка даних</li>
+                </ul>
+            </div>
+
+            <div id="image-section">
+                <h1>Зображення в HTML</h1>
+                <h2>Приклад зображення в застосунку Cinehub</h2>
+                <div class="screenshot-with-code">
+                    <img src="./images/images_screen.png" class="screenshot" alt="Table">
+                    <img src="./images/images_code.png" class="code" alt="Table code">
+                </div>
+                
+                <h3>Атрибути тегу img:</h3>
+                <ul>
+                    <li><code>src</code> - шлях до зображення</li>
+                    <li><code>alt</code> - альтернативний текст</li>
+                    <li><code>width</code> - ширина зображення</li>
+                    <li><code>height</code> - висота зображення</li>
+                </ul>
+            </div>
+
+            <div id="lists-section">
+                <h1>Списки в HTML</h1>
+                <h2>Приклад списку в застосунку Cinehub</h2>
+                <div class="screenshot-with-code">
+                    <img src="./images/list_screen.png" class="screenshot" alt="Table">
+                    <img src="./images/list_code.png" class="code" alt="Table code">
+                </div>
+
+                <h2>Маркований список (Unordered List):</h2>
+                <ul>
+                    <li>Популярні жанри:</li>
+                    <ul>
+                        <li>Бойовики</li>
+                        <li>Комедії</li>
+                        <li>Драми</li>
+                        <li>Трилери</li>
+                    </ul>
+                </ul>
+
+                <h2>Нумерований список (Ordered List):</h2>
+                <ol>
+                    <li>Топ-5 фільмів 2023 року:</li>
+                    <ol type="a">
+                        <li>Барбі</li>
+                        <li>Оппенгеймер</li>
+                        <li>Вартові галактики 3</li>
+                        <li>Джон Вік 4</li>
+                        <li>Місія нездійсненна 7</li>
+                    </ol>
+                </ol>
+
+                <h2>Список визначень (Definition List):</h2>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Мова розмітки гіпертексту, що використовується для створення веб-сторінок</dd>
+                    
+                    <dt>CSS</dt>
+                    <dd>Каскадні таблиці стилів, що використовуються для оформлення веб-сторінок</dd>
+                    
+                    <dt>JavaScript</dt>
+                    <dd>Мова програмування, що дозволяє створювати динамічний контент на веб-сторінках</dd>
+                </dl>
+
+                <h3>Теорія про теги списків:</h3>
+                <ul>
+                    <li><code>&lt;ul&gt;</code> - маркований список</li>
+                    <li><code>&lt;ol&gt;</code> - нумерований список
+                        <ul>
+                            <li>Атрибут <code>type</code>:
+                                <ul>
+                                    <li>"1" - числа (за замовчуванням)</li>
+                                    <li>"A" - великі літери</li>
+                                    <li>"a" - малі літери</li>
+                                    <li>"I" - великі римські цифри</li>
+                                    <li>"i" - малі римські цифри</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;li&gt;</code> - елемент списку</li>
+                    <li><code>&lt;dl&gt;</code> - список визначень</li>
+                    <li><code>&lt;dt&gt;</code> - термін у списку визначень</li>
+                    <li><code>&lt;dd&gt;</code> - визначення терміну</li>
+                </ul>
+            </div>
+
+            <div id="forms-section">
+                <h1>Форми в HTML</h1>
+                
+                <h2>Приклад форми реєстрації:</h2>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="username">Ім'я користувача:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Тип підписки:</label>
+                        <input type="radio" id="basic" name="subscription" value="basic">
+                        <label for="basic">Базова</label>
+                        <input type="radio" id="premium" name="subscription" value="premium">
+                        <label for="premium">Преміум</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Додаткові опції:</label>
+                        <input type="checkbox" id="notifications" name="notifications">
+                        <label for="notifications">Отримувати сповіщення</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Підписатися на розсилку</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Коментарі:</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit">Зареєструватися</button>
+                    <button type="reset">Очистити</button>
+                </form>
+
+                <h3>Теорія про теги форм:</h3>
+                <ul>
+                    <li><code>&lt;form&gt;</code> - контейнер для форми</li>
+                    <li><code>&lt;input&gt;</code> - поле введення (text, password, email, checkbox, radio)</li>
+                    <li><code>&lt;select&gt;</code> - випадаючий список</li>
+                    <li><code>&lt;option&gt;</code> - елемент випадаючого списку</li>
+                    <li><code>&lt;textarea&gt;</code> - багаторядкове текстове поле</li>
+                    <li><code>&lt;label&gt;</code> - підпис для елемента форми</li>
+                    <li><code>&lt;button&gt;</code> - кнопка</li>
+                </ul>
+
+                <h3>Основні атрибути:</h3>
+                <ul>
+                    <li><code>type</code> - тип поля введення</li>
+                    <li><code>name</code> - ім'я поля для відправки на сервер</li>
+                    <li><code>required</code> - обов'язкове поле</li>
+                    <li><code>placeholder</code> - підказка в полі введення</li>
+                    <li><code>value</code> - значення за замовчуванням</li>
+                </ul>
+            </div>
+
+            <div id="questions">
+                <h1>Контрольні питання</h1>
+
+                <h3>1. Яка структура HTML-документу?</h3>
+                <p>HTML-документ має наступну базову структуру:</p>
+                <pre><code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title&gt;Заголовок сторінки&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            Вміст сторінки
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+                <p>Де:</p>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - оголошення типу документа</li>
+                    <li><code>&lt;html&gt;</code> - кореневий елемент</li>
+                    <li><code>&lt;head&gt;</code> - містить метадані, заголовок, підключення стилів та скриптів</li>
+                    <li><code>&lt;body&gt;</code> - містить видимий контент сторінки</li>
+                </ul>
+
+                <h3>2. Дати визначення тега</h3>
+                <p>Тег - це спеціальна конструкція мов HTML, що використовується для розмітки елементів веб-сторінки. Теги визначають структуру та семантику контенту. Більшість тегів мають відкриваючу та закриваючу частини: <code>&lt;тег&gt;контент&lt;/тег&gt;</code>.</p>
+
+                <h3>3. Які теги використовуються при роботі з таблицями?</h3>
+                <ul>
+                    <li><code>&lt;table&gt;</code> - створює таблицю</li>
+                    <li><code>&lt;tr&gt;</code> - створює рядок таблиці</li>
+                    <li><code>&lt;th&gt;</code> - створює заголовок стовпця/рядка</li>
+                    <li><code>&lt;td&gt;</code> - створює комірку даних</li>
+                    <li><code>&lt;thead&gt;</code> - групує заголовок таблиці</li>
+                    <li><code>&lt;tbody&gt;</code> - групує тіло таблиці</li>
+                    <li><code>&lt;tfoot&gt;</code> - групує підвал таблиці</li>
+                </ul>
+
+                <h3>4. Які теги використовуються при роботі з зображеннями?</h3>
+                <ul>
+                    <li><code>&lt;img&gt;</code> - вставка зображення з атрибутами:
+                        <ul>
+                            <li><code>src</code> - шлях до зображення</li>
+                            <li><code>alt</code> - альтернативний текст</li>
+                            <li><code>width</code> - ширина</li>
+                            <li><code>height</code> - висота</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;figure&gt;</code> - контейнер для зображення</li>
+                    <li><code>&lt;figcaption&gt;</code> - підпис до зображення</li>
+                </ul>
+
+                <h3>5. Які теги використовуються при роботі зі списками?</h3>
+                <ul>
+                    <li><code>&lt;ul&gt;</code> - маркований список</li>
+                    <li><code>&lt;ol&gt;</code> - нумерований список</li>
+                    <li><code>&lt;li&gt;</code> - елемент списку</li>
+                    <li><code>&lt;dl&gt;</code> - список визначень</li>
+                    <li><code>&lt;dt&gt;</code> - термін у списку визначень</li>
+                    <li><code>&lt;dd&gt;</code> - визначення терміну</li>
+                </ul>
+
+                <h3>6. Перерахувати засоби опису таблиць в HTML</h3>
+                <ul>
+                    <li>Структурні теги: <code>table</code>, <code>tr</code>, <code>th</code>, <code>td</code></li>
+                    <li>Групуючі теги: <code>thead</code>, <code>tbody</code>, <code>tfoot</code></li>
+                    <li>Атрибути таблиць:
+                        <ul>
+                            <li><code>border</code> - товщина рамки</li>
+                            <li><code>cellpadding</code> - внутрішній відступ в комірках</li>
+                            <li><code>cellspacing</code> - відстань між комірками</li>
+                            <li><code>colspan</code> - об'єднання стовпців</li>
+                            <li><code>rowspan</code> - об'єднання рядків</li>
+                            <li><code>width</code> - ширина таблиці</li>
+                            <li><code>height</code> - висота таблиці</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="conclusions">
+                <h1>Висновки</h1>
+                <p>В ході виконання лабораторної роботи було вивчено основні теги HTML для створення таблиць, списків та додавання зображень. Набуто практичних навичок у структуруванні веб-сторінок та використанні семантичної розмітки.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

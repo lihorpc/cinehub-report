@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinehub</title>
+    <link rel="stylesheet" href="../../menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="laba-container">
+        <div class="menu">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#lab-info">Лабораторна робота №4</a></li>
+                    <li><a href="#adaptive">Адаптивна верстка</a>
+                        <ul class="submenu">
+                            <li><a href="#theory">Теорія</a></li>
+                            <li><a href="#desktop">Десктопна версія</a></li>
+                            <li><a href="#tablet">Планшетна версія</a></li>
+                            <li><a href="#mobile">Мобільна версія</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#conclusions">Висновки</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content-container">
+            <div id="lab-info">
+                <h1>Інформація про лабораторну роботу</h1>
+                <h2>Тема:</h2>
+                <p>АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT. СТРАТЕГІЯ MOBILE FIRST.</p>
+                
+                <h2>Мета:</h2>
+                <p>Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile First.</pt>
+
+                <h2>Розташування:</h2>
+                <ul>
+                    <li>WEB-застосунок: <code>https://cinehub.static.domains</code></li>
+                    <li>Звітний документ: <code>https://cinehub-report.static.domains</code></li>
+                </ul>
+            </div>
+
+            <div id="theory">
+                <h2>Теорія верстки</h2>
+                
+                <section class="adaptive">
+                    <h3>Адаптивна верстка (Adaptive layout)</h3>
+                    <ul>
+                        <li>Використовує фіксовані розміри макета для конкретних контрольних точок (breakpoints)</li>
+                        <li>Зазвичай має кілька фіксованих макетів для різних пристроїв (desktop, tablet, mobile)</li>
+                        <li>Змінює свій дизайн на певних точках ширини екрану</li>
+                        <li>Використовує медіа-запити (@media queries)</li>
+                    </ul>
+                    <pre><code>
+        @media (max-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 450px;
+            }
+        }
+                    </code></pre>
+                </section>
+        
+                <section class="fluid">
+                    <h3>Гумова верстка (Fluid/Liquid layout)</h3>
+                    <ul>
+                        <li>Використовує відносні одиниці виміру (%, vw, vh)</li>
+                        <li>Контент плавно масштабується відповідно до розміру екрану</li>
+                        <li>Не має фіксованих точок перебудови</li>
+                    </ul>
+                    <pre><code>
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            width: 30%;
+        }
+        .content {
+            width: 70%;
+        }
+                    </code></pre>
+                </section>
+        
+                <section class="differences">
+                    <h3>Основні відмінності</h3>
+                    <div class="comparison">
+                        <div class="adaptive-features">
+                            <h4>Адаптивна верстка:</h4>
+                            <ul>
+                                <li>Фіксовані макети для конкретних розмірів екрану</li>
+                                <li>Чіткі точки перебудови</li>
+                                <li>Більший контроль над дизайном</li>
+                                <li>Може бути складніша в розробці</li>
+                            </ul>
+                        </div>
+                        <div class="fluid-features">
+                            <h4>Гумова верстка:</h4>
+                            <ul>
+                                <li>Плавне масштабування</li>
+                                <li>Немає різких змін макету</li>
+                                <li>Простіша в реалізації</li>
+                                <li>Менший контроль над точним виглядом</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="advantages">
+                    <h3>Переваги адаптивної верстки</h3>
+                    <ul>
+                        <li>Кращий контроль над дизайном на різних пристроях</li>
+                        <li>Можливість оптимізації контенту для конкретних пристроїв</li>
+                        <li>Краща оптимізація зображень</li>
+                        <li>Можливість приховати/показати певні елементи для різних пристроїв</li>
+                    </ul>
+        
+                    <h3>Переваги гумової верстки</h3>
+                    <ul>
+                        <li>Плавніший користувацький досвід</li>
+                        <li>Працює на будь-яких розмірах екрану</li>
+                        <li>Простіша в розробці та підтримці</li>
+                        <li>Менше коду</li>
+                        <li>Швидше завантаження (менше CSS)</li>
+                    </ul>
+                </section>
+        
+                <section class="modern-approach">
+                    <h3>Сучасний підхід</h3>
+                    <p>Зараз часто використовують комбінований підхід:</p>
+                    <ul>
+                        <li>Гумова верстка як основа</li>
+                        <li>Адаптивні елементи для складних компонентів</li>
+                        <li>Використання CSS Flexbox</li>
+                        <li>Застосування відносних одиниць виміру</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="desktop">
+                <h1>Десктопна версія</h1>
+                <img src="./images/main_desktop.png" class="no-margin" alt="Task 2 Screenshot">
+                <img src="./images/item_desktop.png" class="no-margin" alt="Task 2 Screenshot">
+            </div>
+
+            <div id="tablet">
+                <h1>Планшетна версія</h1>
+                <img src="./images/main_tablet.png" class="no-margin" alt="Task 2 Screenshot">
+                <img src="./images/item_tablet.png" class="no-margin" alt="Task 2 Screenshot">
+            </div>    
+
+            <div id="mobile">
+                <h1>Мобільна версія</h1>
+                <img src="./images/main_mobile.png" class="no-margin" alt="Task 2 Screenshot">
+                <img src="./images/item_mobile.png" class="no-margin" alt="Task 2 Screenshot">
+            </div>
+
+            <div id="conclusions">
+                <h1>Висновки</h1>
+                <p>В ході виконання лабораторної роботи №4 було досягнуто наступних результатів:</p>
+                <ul>
+                    <li>Освоєно принципи адаптивної верстки та її відмінності від гумової верстки</li>
+                    <li>Набуто практичних навичок роботи з медіа-запитами для різних розмірів екранів</li>
+                    <li>Опановано стратегію Mobile First та її переваги в сучасній веб-розробці</li>
+                    <li>Створено адаптивний дизайн для трьох версій сайту: десктопної, планшетної та мобільної</li>
+                    <li>Отримано практичний досвід роботи з інструментами розробника для тестування адаптивності</li>
+                </ul>
+
+                <p>Отримані знання та навички є критично важливими для створення сучасних веб-сайтів, що забезпечують якісний користувацький досвіт на будь-яких пристроях.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

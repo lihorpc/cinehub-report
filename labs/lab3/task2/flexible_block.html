@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Гумова блокова верстка</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header, .footer {
+            background-color: #FFD700;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 2%;
+        }
+
+        .header {
+            justify-content: space-between;
+        }
+
+        .header-content {
+            width: 10%;
+            height: 30px;
+            background-color: white;
+        }
+
+        .content {
+            background-color: #FFFFFF;
+            display: flex;
+        }
+
+        .left-sidebar {
+            background-color: #4169E1;
+            width: 20%;
+            min-width: 150px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            gap: 10px;
+        }
+
+        .red-block {
+            background-color: #FF6B6B;
+            height: 100px;
+        }
+
+        .blue-block {
+            background-color: #4169E1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar-content {
+            display: flex;
+            height: 100%;
+            gap: 2%;
+        }
+
+        .left, .right {
+            width: 49%;
+            height: 100%;
+        }
+
+        .empty {
+            border: solid 3px lightgray;
+            height: calc(100% - 100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content"></div>
+            <h1>1</h1>
+        </div>
+        <div class="content">
+            <div class="left-sidebar"><h1>2</h1></div>
+            <div class="right-sidebar">
+                <div class="red-block"></div>
+                <div class="sidebar-content">
+                    <div class="left">
+                        <div class="empty"><h1>3</h1></div>
+                        <div class="red-block"></div>
+                    </div>
+                    <div class="right">
+                        <div class="blue-block"><h1>4</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><h1>5</h1></div>
+    </div>
+</body>
+</html>
