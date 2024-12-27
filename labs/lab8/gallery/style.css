@@ -1,0 +1,52 @@
+body {
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.gallery-item {
+    width: 32%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.gallery-image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.basicLightbox img {
+    max-width: 90vw !important;
+    max-height: 90vh !important;
+    object-fit: contain;
+} 
